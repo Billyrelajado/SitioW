@@ -1,7 +1,9 @@
 
 
-function ImLK(){
-    console.log("Imlk work");
-    alert("U got it man");
-    swal("advice","Hoy es un gran día para sentirse mejor");
+function sent_dt(){
+    var the_host = window.location.origin;
+    alert(the_host);
+    var newurl = the_host+"drunk.html"
+    alert(newurl);
+    window.location.href = newurl;//"./drunk.html";
 }
