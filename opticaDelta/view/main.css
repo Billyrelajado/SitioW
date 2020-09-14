@@ -1,6 +1,10 @@
 .jumbotron {
-    background: none
+    background: none;
+    /* background: url('./img/web.jpg') no-repeat center center; */
 }
 body{
-    background: url('./img/aeroplane-aircraft-airplane-2088203.jpg') no-repeat center center;
+    /* background: url('./img/art.jpg') no-repeat; */
+    /* background-size: auto; */
+    /* border: 2px solid black; */
+    padding: 25px;
 }
