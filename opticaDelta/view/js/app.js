@@ -1,9 +1,13 @@
-
-
-function sent_dt(){
-    var the_host = window.location.origin;
-    alert(the_host);
-    var newurl = the_host+"/SitioW/drunk.html"
-    alert(newurl);
-    window.location.href = newurl;//"./drunk.html";
-}
+const app = new Vue({
+    el:'#app',
+    data:{
+        titulo:'Delta-WEB',
+        user:'jovany',
+        tipos:[{desc:'CRUD Dentro de tablas.',c:'crear',r:'leer',u:'actualizar',d:'eliminar',num:6}],
+    },
+    methods:{
+        deltaForm(){
+            console.log('vue func');
+        }
+    }
+});

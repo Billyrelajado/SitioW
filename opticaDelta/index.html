@@ -5,62 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="./js/app.js"></script>
-    <title>Delta-WEB</title>
+    <title>{{titulo}}</title>
     <link rel="stylesheet" href="./view/main.css">
 <!--BOOTSTRAP 4 IMPORTS-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light">
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" onclick="">Contactanos</button>
-            <button class="btn btn-outline-success my-2 my-sm-0" onclick="sent_dt()">Iniciar sesion</button>
-        </form>
-    </nav>
-    <div class="jumbotron text-center">
-        <h1>Technology on your hands</h1>
-    </div>
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-md-4 text-center">
-                <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="/view/img/logo_d01.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Formulario de consulta</h5>
-                    <p class="card-text">Revision de formulario para registro de examen y pacientes.</p>
-                    <a href="#" class="btn btn-primary">Ir</a>
-                  </div>
+    <div id="app">
+
+        <nav class="navbar navbar-light bg-light">
+            <form class="form-inline">
+                <a class="navbar-brand" href="#">{{user}}</a>
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" onclick="">Contactanos</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" onclick="sent_dt()">Iniciar sesion</button>
+            </form>
+        </nav>
+        <div class="jumbotron text-center">
+            <h1>Technology on your hands</h1>
+        </div>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="./view/img/logo_d01.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Formulario de consulta</h5>
+                            <p class="card-text">Revision de formulario para registro de examen y pacientes.</p>
+                            <!-- <a href="#" v-on:click="deltaForm" class="btn btn-primary">Ir</a> -->
+                            <button v-on:click="deltaForm" class="btn btn-primary">Ir</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="/view/img/users_01.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Formulario de usuario</h5>
-                    <p class="card-text">Creacion de usuarios.</p>
-                    <a href="#" class="btn btn-primary">Ir</a>
-                  </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="./view/img/users_01.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Formulario de usuario</h5>
+                            <p class="card-text">Creacion de usuarios.</p>
+                            <a href="#" class="btn btn-primary">Ir</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="./view/img/tb_02.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Tablas dinamicas</h5>
+                            <p class="card-text" v-for="tipo of tipos">{{tipo.desc}} <br> {{tipo.c}},{{tipo.r}},{{tipo.u}},{{tipo.d}}
+                            <span v-if="tipo.num === 6" > create</span>
+                            </p>
+                            <a href="#" class="btn btn-primary">Ir</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-                <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="/view/img/tb_02.jpeg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Tablas dinamicas</h5>
-                    <p class="card-text">Preview de tablas con filtros dinamicos.</p>
-                    <a href="#" class="btn btn-primary">Ir</a>
-                  </div>
-                </div>
-            </div>
+            
         </div>
-    
-         
+        
     </div>
-  
 </body>
 <!-- JS BOOTSTRAP--->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -69,5 +75,7 @@
 
 <!-- development version, includes helpful console warnings -->
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="./view/js/app.js"></script>
+
 
 </html>
