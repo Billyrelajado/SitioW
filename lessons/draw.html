@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <title>JCO-WEB-ART</title>
+</head>
+<body>
+      <!-- header -->
+      <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand">Ill Company</a>
+          <form class="d-flex">
+                <button class="btn btn-outline-success me-2" type="button">Projects</button>
+                <button class="btn btn-outline-success me-2" type="button">WebArt</button>
+                <button class="btn btn-outline-success me-2" type="button">Drunk</button>
+                <button class="btn btn-outline-success me-2" type="button" onclick="redirect('../index.html')">Inicio</button>
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    <!-- ends header -->
+
+    <p>Drawing</p>
+    <canvas width="300" height="300" id="drawing_area"></canvas>
+
+<!-- JavaScript for bootstrap 5 -->
+    <!-- To improve the import we can import de bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="art.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
