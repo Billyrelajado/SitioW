@@ -23,7 +23,7 @@
           <a class="navbar-brand">Ill Company</a>
           <form class="d-flex">
                 <!-- <button class="btn btn-outline-success" onclick="sent_dt()">Drunk troopers Web</button> -->
-                <button class="btn btn-outline-success me-2" type="button">Projects</button>
+                <button class="btn btn-outline-success me-2" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Projects</button>
                 <button class="btn btn-outline-success me-2" type="button" onclick="redirect('./lessons/draw.html')">WebArt</button>
                 <button class="btn btn-outline-success me-2" type="button">Drunk</button>
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -95,6 +95,81 @@
     </div>
 
 
+    <!-- chatboot -->
+    <script SameSite="None; Secure" src="https://static.landbot.io/landbot-3/landbot-3.0.0.js"></script>
+    <script>
+      var myLandbot = new Landbot.Livechat({
+        configUrl: 'https://chats.landbot.io/v3/H-996178-JFSBITATAZCQJJRJ/index.json',
+      });
+    </script>
+
+
+
+
+   <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Mi primer ejercicion de programacion</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Saying hello to Vanessa, 
+          A cachito le gustan los chocolates
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Show changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-light text-center text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <form action="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-auto mb-4 mb-md-0">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-md-5 col-12 mb-4 mb-md-0">
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="email" id="form5Example2" class="form-control" />
+              <label class="form-label" for="form5Example2">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-auto mb-4 mb-md-0">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3">
+      © 2021 Copyright:
+      <a class="text-dark" href="https://bill.com/">illCompany.io</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
 
     <!-- JavaScript for bootstrap 5 -->
     <!-- To improve the import we can import de bundle -->
