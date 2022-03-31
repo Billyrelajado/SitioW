@@ -2,30 +2,42 @@ const app =new Vue({
     el:'#app',
     data(){
         return{
-            title:'Hola relajo',
+            title:'Web development with VUE.JS',
             name:'JCO Knowledge',
-            img:'https://github.com/Billyrelajado/imgbank/blob/main/Logo4.png'
+            img:'https://raw.githubusercontent.com/Billyrelajado/imgbank/main/logo2.png',
+            imgside:'https://raw.githubusercontent.com/Billyrelajado/imgbank/main/Logo7.png',
+            changePercent:11,
+            prices:[123,45,768],
+            pricesDays:[
+                {day:'Monday',value:2325,st:1},
+                {day:'Tuesday',value:665,st:1},
+                {day:'Wednesday',value:45534,st:1},
+                {day:'Thursday',value:679,st:0},
+                {day:'Friday',value:2345,st:1},
+                {day:'Saturday',value:4466,st:0},
+                {day:'Sunday',value:2344,st:1},
+            ]
 
         }
     }
 });
 
-var boton1 = document.getElementById('saludo');
-    boton1.addEventListener("click", mostrarNombre, false);
+// var boton1 = document.getElementById('saludo');
+//     boton1.addEventListener("click", mostrarNombre, false);
 
 
-function mostrarNombre(){
-    var edad =  document.getElementById('caja-edad').value;
-    var ano_nacimiento  = nacimiento(edad);
-    var caja_ano = document.getElementById('caja-ano');
-    caja_ano.value(ano_nacimiento);
+// function mostrarNombre(){
+//     var edad =  document.getElementById('caja-edad').value;
+//     var ano_nacimiento  = nacimiento(edad);
+//     var caja_ano = document.getElementById('caja-ano');
+//     caja_ano.value(ano_nacimiento);
 
 
-    var cajaTexto = document.getElementById('caja-nombre');
-    var x = document.getElementById("caja-nombre").value; 
-    var elnombre = cajaTexto.value;
-    alert("Hola "+  elnombre);
-}
+//     var cajaTexto = document.getElementById('caja-nombre');
+//     var x = document.getElementById("caja-nombre").value; 
+//     var elnombre = cajaTexto.value;
+//     alert("Hola "+  elnombre);
+// }
 
 
 
